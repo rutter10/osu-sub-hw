@@ -1,21 +1,20 @@
 *{
     box-sizing: border-box;
 }
-
-body{
-
-}
-
+/* Format for header */
 .header {
     padding: 20px;
     text-align: center;
     background-color: darkslateblue;
     color: white;
 }
+
+/* Format for navbar */
 .navbar{
     display: flex;
     background-color: black;
 }
+
 .navbar a{
     height: 50px;
     color: white;
@@ -29,41 +28,87 @@ body{
     color:black;
 }
 
+/* Format for content container */
 .row{
     display:flex;
     flex-wrap: wrap;
 }
 
 .row img{
-    height: 200px;
+    height: 300px;
 }
 
+/* Format for left side container */
 .side {
     flex: 30%;
     text-align: center;
     background-color: lightgrey;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .side img{
-    height: 60px;
+    height: 300px;
 }
 
+/* Format for right side container */
 .main{
     flex: 70%;
     background-color: white;
     padding: 20px;
 }
 
-.fakeimg{
-    background-color: darkgrey
+/* Most Recent Project */
+.projects{
+    margin-bottom: 150px;
+}
+
+.section1{
+    flex: display;
+    position:relative;
+    padding: 0px;
+
+}
+
+.section1 img{
+    width: 100%;
+    height:  auto;
+}
+
+/* Future Projects */
+.section2{
+    flex: dispaly;
+    position: relative;
+    padding: 0px;
+}
+.section2 img{
+    float:left;
+    width: 640px;
+    height: auto;
+    margin-right: 0px;
+    
+}
+
+/* Format for footer */
+.footer{
+    display: inline-block;
+    flex-wrap: nowrap;
     width: 100%;
     padding: 20px;
-}
-
-.footer{
-    padding: 20px;
-    text-align: center;
+    color:white;
     background: darkslateblue;
+    text-align: center;
+    text-decoration: underline;
 }
 
+.footer h4{
+    text-align:center;
+}
+.footer a{
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .row .navbar{
+        flex-direction: column;
+    }
+}

@@ -16,25 +16,29 @@
 
 <!-- Navigation -->
 <div class="navbar">
-    <a href="#">About Me</a>
-    <a href="#">Work</a>
-    <a href="#">Contact Me</a>
-    <a href="#">Resume</a>
+    <a href="#aboutMe">About Me</a>
+    <a href="#Projects">Projects</a>
+    <a href="#contactMe">Contact Me</a>
 </div>
 
+<!-- Defines the container below the header -->
 <div class="row">
+    <!-- Left side content container -->
     <div class="side">
       <h2>About Me</h2>
       <h4>Photo of me:</h4>
-      <img style=height:300px src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Cat 2.JPG">
-      <div class="fakeimg" style="height:60px;">Image</div>
+      <img src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Cat 2.JPG">
+<br>  
+<br>    
+<hr>
+      <h2>Projects</h2>
 <br>
-      <div class="fakeimg" style="height:60px;">Image</div>
-<br>
-      <div class="fakeimg" style="height:60px;">Image</div>
     </div>
-    <div class="main">
+    <!-- Defines right side container -->
+    <div class="main" id="aboutMe">
       <h4><b>Last Updated: February 6th, 2021</b></h4>
+      <!-- Adding a class to seperate text for different spacing or style -->
+      <div class="personal">
       <h5>Personal</h5>
       <p>Last year a litter of kittens were born in my back yard that all struggled with health
           and needed to be rescued. After five weeks of antibiotics and several vet trips, they seemed
@@ -42,8 +46,11 @@
           three of them and the mom. This is the story how I went from a dog person, to an owner of three
           cats.
       </p>
+      </div>
 <br>
-      <h5>Work</h5>
+      <!-- Adding a class to seperate text for different spacing or style -->
+      <h5>Projects</h5>
+      <div class ="projects">
       <p>After graduating from Ohio State in 2016 I've moved around a lot. I started my first engineering job
           in 2017 as a Laser Welding Engineer / Supplier Quality Engineer in Cleveland, OH. This provided great experience and a 
           meaniful work environment. Though I enjoyed this job, for career growth, I took a job at Honda in Indiana. Here I was 
@@ -51,26 +58,40 @@
           This was another satifying job, but in 2020 I moved back to Ohio for family reasons. I'm not living in Columbus, OH, and 
           drive to Troy for work daily as an Arc Welding Engineer. This is another great opportunity that I am greatful for. Here I 
           got to spend more time programming robots, which solidified my interest in Computer Programming!
-      </p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some Text...</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur 
-           adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
+      </p> 
+      </div>
+<hr>
+        <!-- Creating a class for the most recent complete project -->
+        <div class="section1" id="Projects">
+            <h2>Most Recent</h2>
+            <h5>Title description</h5>
+            <a href="https://rutter10.github.io/osu-sub-hw/" target="_blank">
+            <img src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Project 1.jpeg" alt="Project Picture"></img>
+            </a>
+        </div>
+        <!-- Creating a class for additional complete projects -->
+        <div class="section2">
+            <a href="#">
+            <img src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Project 2.jpg" alt="Future Project"></img>
+            </a>
+            <a href="#">
+            <img src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Project 2.jpg" alt="Future Project"></img>
+            </a>
+            <a href="#">
+            <img src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Project 2.jpg" alt="Future Project"></img>
+            </a>
+            <a href="#">
+            <img src="C:\Users\rutte\desktop\osu-hub\osu-sub-hw\homework-2\Project 2.jpg" alt="Future Project"></img>
+            </a>
+        </div>
     </div>
-</div>
 
-<div class="footer">
-    <h2>Footer</h2>
+    <!-- Footer -->
+<div class="footer" id="contactMe">
+        <h4>Contact Me</h4>
+        <p>(440) 474 3662</p>
+        <p>rutter1010@gmail.com</p>
+        <p><a href="https://github.com/rutter10/osu-sub-hw>">GitHub</a></p>
 </div>
 
 
